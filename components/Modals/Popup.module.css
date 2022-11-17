@@ -1,0 +1,12 @@
+.bg {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background: radial-gradient(
+    circle at center,
+    #333 5%,
+    #000 90%,
+    #000 95%,
+    #000 98%,
+    #000 100%
+  );
+}

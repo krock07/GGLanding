@@ -6,9 +6,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.4.1",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@headlessui/react": "^1.7.4",
+    "@heroicons/react": "^2.0.13",
+    "formik": "^2.2.9",
+    "framer-motion": "^7.6.7",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.6.0",
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "@types/node": "18.11.3",
