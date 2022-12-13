@@ -5,9 +5,9 @@ import Popup from "../Modals/Popup";
 const MainNav = () => {
   const [showModal, setShowModal] = useState(false);
   return (
-    <div>
-      <nav className="bg-[#2A2A2A] py-5 flex align-center justify-center">
-        <div className="container flex justify-around align-center">
+    <div className="lg:pt-3">
+      <nav className="bg-[#2A2A2A] py-5 flex align-center justify-center lg:w-[1200px] lg:rounded-[50px] lg:mx-auto ">
+        <div className="container flex justify-around align-center lg:items-center lg:justify-between lg:px-8 ">
           <div>
             <img
               className="object-contain w-[150px] "
@@ -21,7 +21,7 @@ const MainNav = () => {
               onClick={() => {
                 setShowModal(true);
               }}
-              className=" bg-[#278AEC] text-white font-bold text-[10px] rounded h-[20.87px] w-[65.96px]"
+              className=" bg-[#278AEC] text-white font-bold text-[10px] rounded h-[20.87px] w-[65.96px] lg:w-[138px]"
             >
               Join list
             </button>

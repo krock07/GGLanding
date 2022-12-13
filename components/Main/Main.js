@@ -52,7 +52,7 @@ const Main = () => {
 
         {/* SECOND SECTION */}
 
-        <div className="bg-[#2A2A2A]">
+        <div className="bg-[#181818]">
           <Carousel />
         </div>
 
@@ -60,36 +60,41 @@ const Main = () => {
         <div className="flex justify-center pt-10">
           <div className="flex flex-col justify-center">
             <h1 className="font-bold text-white text-[24px] xl:text-4xl ">
-              Become a Beta Tester!
+              Become a Beta Tester 🔥
             </h1>
             <div className="pt-5 mx-auto xl:m-0">
               <div className="flex items-center xl:gap-5 xl:mb-5 ">
-                <ImCheckmark className="text-[#00C453]" />{" "}
+                <ImCheckmark className="text-[#278AEC]" />{" "}
                 <span className="text-base text-white xl:text-2xl">
                   Username Reservation{" "}
                 </span>
               </div>
 
               <div className="flex items-center xl:mb-5 xl:gap-5 ">
-                <ImCheckmark className="text-[#00C453]" />{" "}
+                <ImCheckmark className="text-[#278AEC]" />{" "}
                 <span className="text-base text-white xl:text-2xl">
                   Weekly Cash Prizes{" "}
                 </span>
               </div>
               <div className="flex items-center xl:gap-5 xl:mb-5 ">
-                <ImCheckmark className="text-[#00C453]" />{" "}
+                <ImCheckmark className="text-[#278AEC]" />{" "}
                 <span className="text-base text-white xl:text-2xl">
                   FREE Premium Membership{" "}
                 </span>
               </div>
-              <div className="flex justify-center mt-5 mb-7 ">
+              <div className="flex justify-between w-full mt-5 mb-7">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="rounded-[3px] p-1 bg-[#2A2A2A] flex-1"
+                />
                 <button
                   onClick={() => {
                     setShowModal(true);
                   }}
                   className="font-bold text-white text-[10px] px-3 py-1 capitalize bg-[#278aec] rounded-[3px] xl:text-xs"
                 >
-                  JOIN LIST
+                  JOIN BETA
                 </button>
                 {showModal && <Popup setOpenModal={setShowModal} />}
               </div>
@@ -97,7 +102,7 @@ const Main = () => {
           </div>
         </div>
 
-        <div className="pt-10 bg-[#2A2A2A] text-white">
+        <div className="pt-10 bg-[#181818] text-white">
           <Footer />
         </div>
         {/* <div className="pt-10 bg-[#2A2A2A] sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">

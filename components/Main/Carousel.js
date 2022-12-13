@@ -9,7 +9,7 @@ export default () => (
     showStatus={false}
     showThumbs={false}
   >
-    <div className="py-10 bg-[#2A2A2A] grid grid-cols-1  lg:grid-cols-2 max-w-6xl lg:max-w-[1200px] mx-auto">
+    <div className="py-10 bg-[#181818] grid grid-cols-1  lg:grid-cols-2 max-w-6xl lg:max-w-[1200px] mx-auto">
       <div className="flex flex-col-reverse  lg:flex-row lg:min-w-[1200px] lg:justify-around ">
         <div className="px-3">
           <img
@@ -38,7 +38,7 @@ export default () => (
       </div>
     </div>
 
-    <div className="py-10 bg-[#2A2A2A] grid grid-cols-1  lg:grid-cols-2 max-w-6xl lg:max-w-[1200px] mx-auto">
+    <div className="py-10 bg-[#181818] grid grid-cols-1  lg:grid-cols-2 max-w-6xl lg:max-w-[1200px] mx-auto">
       <div className="flex flex-col-reverse  lg:flex-row lg:min-w-[1200px]  lg:justify-around ">
         <div className="px-3">
           <img
@@ -66,7 +66,7 @@ export default () => (
       </div>
     </div>
 
-    <div className="py-10 bg-[#2A2A2A] grid grid-cols-1  lg:grid-cols-2 max-w-6xl lg:max-w-[1200px] mx-auto">
+    <div className="py-10 bg-[#2181818] grid grid-cols-1  lg:grid-cols-2 max-w-6xl lg:max-w-[1200px] mx-auto">
       <div className="flex flex-col-reverse  lg:flex-row lg:min-w-[1200px]  lg:justify-around ">
         <div className="px-3">
           <img
@@ -92,7 +92,7 @@ export default () => (
       </div>
     </div>
 
-    <div className="py-10 bg-[#2A2A2A] grid grid-cols-1  lg:grid-cols-2 max-w-6xl lg:max-w-[1200px] mx-auto">
+    <div className="py-10 bg-[#181818] grid grid-cols-1  lg:grid-cols-2 max-w-6xl lg:max-w-[1200px] mx-auto">
       <div className="flex flex-col-reverse  lg:flex-row lg:min-w-[1200px]  lg:justify-around ">
         <div className="px-3">
           <img
@@ -120,7 +120,7 @@ export default () => (
       </div>
     </div>
 
-    <div className="py-10 bg-[#2A2A2A] grid grid-cols-1  lg:grid-cols-2 max-w-6xl lg:max-w-[1200px] mx-auto">
+    <div className="py-10 bg-[#181818] grid grid-cols-1  lg:grid-cols-2 max-w-6xl lg:max-w-[1200px] mx-auto">
       <div className="flex flex-col-reverse  lg:flex-row lg:min-w-[1200px]  lg:justify-around ">
         <div className="px-3">
           <img
