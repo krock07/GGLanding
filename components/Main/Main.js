@@ -13,15 +13,15 @@ const Main = () => {
     <MainLayout>
       {/* top section */}
       <main>
-        <div className="flex flex-col-reverse items-center justify-center xl:mx-auto xl:flex-row-reverse xl:container xl:justify-between xl:max-w-4xl">
+        <div className="flex flex-col-reverse items-center justify-center xl:mx-auto xl:flex-row-reverse xl:container xl:justify-between xl:max-w-[1200px]">
           <div className="my-5">
             <img
-              src="/mainPhone.png"
+              src="/lapTop.png"
               alt="Gap Gambler"
               className=" h-[250px] xl:h-[450px]"
             />
           </div>
-          <div className="relative mb-7">
+          <div className="relative lg:flex lg:flex-col lg:align-center lg:justify-center mb-7 ">
             <h1 className="font-bold text-center text-white ">
               <span className="block pt-20 mb-2 xl:text-[40px] xl:pt-0">
                 {" "}
@@ -31,7 +31,7 @@ const Main = () => {
                 Catalyst Sentiment Platform
               </span>
             </h1>
-            <img
+            {/* <img
               className=" w-[100px] xl:w-[200px] xl:h-[124px] object-cover absolute xl:top-[160px] xl:left-[50px]"
               src="/candleBottom.png"
               alt=""
@@ -40,13 +40,14 @@ const Main = () => {
               className="w-[50px] top-5 right-[40.5%] xl:w-[100px] xl:h-[124px] object-cover absolute xl:top-[-130px] xl:left-[400px]"
               src="/candleTop.png"
               alt=""
-            />
+            /> */}
+
+            <div className="flex justify-center mt-5 mb-7 ">
+              <button className="font-bold text-white text-[10px] px-1 py-1 capitalize bg-[#278aec] rounded-[3px] lg:px-11 lg:py-2">
+                JOIN LIST
+              </button>
+            </div>
           </div>
-          {/* <div className="mx-auto mt-5 mb-7 ">
-            <button className="font-bold text-white text-[10px] px-1 py-1 capitalize bg-[#278aec] rounded-[3px]">
-              JOIN LIST
-            </button>
-          </div> */}
         </div>
 
         {/* SECOND SECTION */}
