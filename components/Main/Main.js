@@ -6,6 +6,7 @@ import Carousel from "./Carousel";
 import { ImCheckmark } from "react-icons/im";
 import Popup from "../Modals/Popup";
 import Footer from "../Footer/Footer";
+import NewForm from "../Form/NewForm";
 const Main = () => {
   const [showModal, setShowModal] = useState(false);
 
@@ -82,22 +83,7 @@ const Main = () => {
                   FREE Premium Membership{" "}
                 </span>
               </div>
-              <div className="flex justify-between w-full mt-5 mb-7">
-                <input
-                  type="email"
-                  placeholder="Email"
-                  className="rounded-[3px] p-1 bg-[#2A2A2A] flex-1"
-                />
-                <button
-                  onClick={() => {
-                    setShowModal(true);
-                  }}
-                  className="font-bold text-white text-[10px] px-3 py-1 capitalize bg-[#278aec] rounded-[3px] xl:text-xs"
-                >
-                  JOIN BETA
-                </button>
-                {showModal && <Popup setOpenModal={setShowModal} />}
-              </div>
+              <NewForm />
             </div>
           </div>
         </div>
