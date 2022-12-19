@@ -61,7 +61,7 @@ const NewForm = () => {
           /* and other goodies */
         }) => (
           <Form onSubmit={handleSubmit}>
-            <div className="flex justify-between w-full mt-5 mb-3">
+            <div className="flex justify-center w-full mt-5 mb-3 md:justify-between">
               <input
                 className="rounded-[3px] p-1 bg-[#2A2A2A] flex-1 text-white placeholder:text-white  placeholder:text-[12px]"
                 type="email"
@@ -75,7 +75,7 @@ const NewForm = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="font-bold text-white text-[10px] w-[174px]   py-1 capitalize bg-[#278aec] rounded-[3px] xl:text-xs"
+                className="font-bold text-white text-[10px] w-[74px] md:w-[174px]   py-1 capitalize bg-[#278aec] rounded-[3px] xl:text-xs"
               >
                 JOIN BETA
               </button>

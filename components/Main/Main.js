@@ -59,25 +59,25 @@ const Main = () => {
 
         {/* More main page content here... */}
         <div className="flex justify-center pt-10">
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col items-center justify-center">
             <h1 className="font-bold text-white text-[24px] xl:text-4xl ">
               Become a Beta Tester 🔥
             </h1>
-            <div className="pt-5 mx-auto xl:m-0">
-              <div className="flex items-center xl:gap-5 xl:mb-5 ">
+            <div className="w-full pt-5 mx-auto xl:m-0">
+              <div className="flex items-center justify-center md:justify-start xl:gap-5 xl:mb-5 ">
                 <ImCheckmark className="text-[#278AEC]" />{" "}
                 <span className="text-base text-white xl:text-2xl">
                   Username Reservation{" "}
                 </span>
               </div>
 
-              <div className="flex items-center xl:mb-5 xl:gap-5 ">
+              <div className="flex items-center justify-center md:justify-start xl:mb-5 xl:gap-5 ">
                 <ImCheckmark className="text-[#278AEC]" />{" "}
                 <span className="text-base text-white xl:text-2xl">
                   Weekly Cash Prizes{" "}
                 </span>
               </div>
-              <div className="flex items-center xl:gap-5 xl:mb-5 ">
+              <div className="flex items-center justify-center md:justify-start xl:gap-5 xl:mb-5 ">
                 <ImCheckmark className="text-[#278AEC]" />{" "}
                 <span className="text-base text-white xl:text-2xl">
                   FREE Premium Membership{" "}
