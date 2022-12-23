@@ -7,6 +7,7 @@ import { ImCheckmark } from "react-icons/im";
 import Popup from "../Modals/Popup";
 import Footer from "../Footer/Footer";
 import NewForm from "../Form/NewForm";
+
 const Main = () => {
   const [showModal, setShowModal] = useState(false);
 
@@ -14,25 +15,27 @@ const Main = () => {
     <MainLayout>
       {/* top section */}
       <main>
-        <div className="flex flex-col-reverse items-center justify-center xl:mx-auto xl:flex-row-reverse xl:container xl:justify-between xl:max-w-[1200px]">
-          <div className="my-5">
-            <img
-              src="/lapTop.png"
-              alt="Gap Gambler"
-              className=" h-[250px] xl:h-[450px]"
-            />
-          </div>
-          <div className="relative lg:flex lg:flex-col lg:align-center lg:justify-center mb-7 ">
-            <h1 className="font-bold text-center text-white ">
-              <span className="block pt-20 mb-2 xl:text-[40px] xl:pt-0">
-                {" "}
-                The OFFICIAL
-              </span>
-              <span className="block xl:text-[40px] xl:w-[600px]">
-                Catalyst Sentiment Platform
-              </span>
-            </h1>
-            {/* <img
+        <div className="bg-[#101010] h-[70vh] md:h-[calc(100vh-3rem)]   mx-auto  xl:max-w-[1200px]">
+          <div className="flex flex-col-reverse items-center w-full mt-20 md:flex-row-reverse md:justify-center ">
+            <div className="my-5">
+              <img
+                src="/lapTop.png"
+                alt="Gap Gambler"
+                className=" h-[300px] xl:h-[450px]"
+              />
+            </div>
+            <div className="relative lg:flex lg:flex-col lg:align-center lg:justify-center mb-7 ">
+              <h1 className="font-bold text-center text-white ">
+                <span className="block md:pt-20 mb-2 text-[24px] xl:text-[50px] xl:pt-0">
+                  {" "}
+                  <span className="text-[24px] md:text-[45px]">The</span>{" "}
+                  OFFICIAL
+                </span>
+                <span className="block text-[24px] xl:text-[40px] xl:w-[600px] mt-[18px] mb-[36px]">
+                  Catalyst Sentiment Platform
+                </span>
+              </h1>
+              {/* <img
               className=" w-[100px] xl:w-[200px] xl:h-[124px] object-cover absolute xl:top-[160px] xl:left-[50px]"
               src="/candleBottom.png"
               alt=""
@@ -43,45 +46,54 @@ const Main = () => {
               alt=""
             /> */}
 
-            <div className="flex justify-center mt-5 mb-7 ">
-              <button className="font-bold text-white text-[10px] px-1 py-1 capitalize bg-[#278aec] rounded-[3px] lg:px-11 lg:py-2">
-                JOIN LIST
-              </button>
+              <div className="flex justify-center mt-5 mb-7 ">
+                <button
+                  onClick={() => {
+                    setShowModal(true);
+                  }}
+                  className=" shadow-[inset_0_0_30px_rgba(0,0,0,0.5)] font-bold text-white text-[16px]  w-[115px] h-[33px] capitalize bg-[#278aec] rounded-[10px] md:w-[270px] md:h-[78px] md:text-[36px]"
+                >
+                  JOIN NOW
+                </button>
+              </div>
+              {showModal && <Popup setOpenModal={setShowModal} />}
             </div>
           </div>
         </div>
 
         {/* SECOND SECTION */}
 
-        <div className="bg-[#181818]">
+        <div className="bg-[#181818] md:h-[calc(100vh-3rem)]">
           <Carousel />
         </div>
 
         {/* More main page content here... */}
-        <div className="flex justify-center pt-10">
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="font-bold text-white text-[24px] xl:text-4xl ">
+        <div className="flex justify-start pt-[53px]  md:pt-[108px] flex-col items-center md:h-[calc(100vh+3rem)] mb-[51px] md:mb-0 ">
+          <div className="flex flex-col gap-[32px] md:gap-[79px] ">
+            <h1 className="font-bold text-white text-[24px] lg:text-[50px] ">
               Become a Beta Tester 🔥
             </h1>
-            <div className="w-full pt-5 mx-auto xl:m-0">
-              <div className="flex items-center justify-center md:justify-start xl:gap-5 xl:mb-5 ">
-                <ImCheckmark className="text-[#278AEC]" />{" "}
-                <span className="text-base text-white xl:text-2xl">
-                  Username Reservation{" "}
-                </span>
-              </div>
+            <div className="flex flex-col  w-full gap-[32px] md:gap-[79px]">
+              <div className="flex flex-col gap-[39px] md:gap-[79px]">
+                <div className="flex items-center justify-start md:justify-start md:gap-[51px] ">
+                  <ImCheckmark className="text-[#278AEC] w-[42px] h-[29px]" />{" "}
+                  <span className="text-base text-white lg:text-[40px]">
+                    Username Reservation{" "}
+                  </span>
+                </div>
 
-              <div className="flex items-center justify-center md:justify-start xl:mb-5 xl:gap-5 ">
-                <ImCheckmark className="text-[#278AEC]" />{" "}
-                <span className="text-base text-white xl:text-2xl">
-                  Weekly Cash Prizes{" "}
-                </span>
-              </div>
-              <div className="flex items-center justify-center md:justify-start xl:gap-5 xl:mb-5 ">
-                <ImCheckmark className="text-[#278AEC]" />{" "}
-                <span className="text-base text-white xl:text-2xl">
-                  FREE Premium Membership{" "}
-                </span>
+                <div className="flex items-center justify-start md:justify-start md:gap-[51px]">
+                  <ImCheckmark className="text-[#278AEC] w-[42px] h-[29px]" />{" "}
+                  <span className="text-base text-white lg:text-[40px]">
+                    Weekly Cash Prizes{" "}
+                  </span>
+                </div>
+                <div className="flex items-center justify-start md:justify-start md:gap-[51px] ">
+                  <ImCheckmark className="text-[#278AEC] w-[42px] h-[29px]" />{" "}
+                  <span className="text-base text-white xl:text-[40px]">
+                    FREE Premium Membership{" "}
+                  </span>
+                </div>
               </div>
               <NewForm />
             </div>

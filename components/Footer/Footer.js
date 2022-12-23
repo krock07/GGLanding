@@ -10,7 +10,7 @@ const Footer = () => {
         <AiOutlineInstagram className="text-white" />
       </div>
       <div className="px-5">
-        <div className="flex text-[#707070] text-[14px] justify-around">
+        <div className="flex text-[#707070] text-[14px] justify-around md:justify-center md:gap-20">
           <p>About</p>
           <p>Rules</p>
           <p>Disclaimer</p>
@@ -18,14 +18,14 @@ const Footer = () => {
             <p className="cursor-pointer">Contact</p>
           </Link>
         </div>
-        <div className="flex text-[#707070] text-[14px] justify-around">
+        <div className="flex text-[#707070] text-[14px] justify-around md:justify-center md:gap-11">
           <p>Terms</p>
           <p>Privacy</p>
           <p>Disclosures</p>
           <p>Advertise</p>
         </div>
       </div>
-      <div className=" pt-5 px-5 flex text-[#707070] text-[12px]">
+      <div className=" pt-5 px-5 flex text-[#707070] text-[12px] md:justify-center">
         <small>
           ©2022 Gap Gambler. All rights reserved. Market Data by Xignite and
           BATS BZX Real-Time Price

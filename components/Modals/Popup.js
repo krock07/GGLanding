@@ -11,9 +11,9 @@ export default function Modal({ setOpenModal }) {
           className="fixed inset-0 w-full h-full bg-black opacity-70"
           onClick={() => setOpenModal(false)}
         ></div>
-        <div className="flex items-center min-h-screen px-4 py-8">
+        <div className="flex items-center min-h-screen py-8 md:px-4">
           <div
-            className={`relative w-full max-w-lg p-4 mx-auto rounded-md shadow-lg ${styles.bg}`}
+            className={`relative w-full md:w-[531px] p-4 mx-auto rounded-[20px] bg-[#2a2a2a] shadow-lg md:h-[531px]`}
           >
             <div className="flex text-white rounded-full items-left">
               <AiFillCloseCircle onClick={() => setOpenModal(false)} />

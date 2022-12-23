@@ -16,7 +16,7 @@ const MainLayout = ({
   ...props
 }) => {
   return (
-    <div className="bg-[#101010]">
+    <div className="bg-[#101010] flex flex-col h-screen">
       <Head>
         <title>{pageTitle}</title>
         <meta charSet="utf-8" />
@@ -47,7 +47,7 @@ const MainLayout = ({
         {" "}
         <MainNav />{" "}
       </header>
-      <main>{children}</main>
+      <main className="flex-1 overflow-y-auto">{children}</main>
     </div>
   );
 };
