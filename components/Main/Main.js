@@ -15,7 +15,7 @@ const Main = () => {
     <MainLayout>
       {/* top section */}
       <main>
-        <div className="bg-[#101010] h-[70vh] md:h-[calc(100vh-3rem)]   mx-auto  xl:max-w-[1200px]">
+        <div className="bg-[#101010] h-[80vh] md:h-[calc(100vh-3rem)]   mx-auto  xl:max-w-[1200px]">
           <div className="flex flex-col-reverse items-center w-full mt-20 md:flex-row-reverse md:justify-center ">
             <div className="my-5">
               <img
