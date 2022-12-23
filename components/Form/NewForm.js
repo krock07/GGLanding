@@ -63,7 +63,7 @@ const NewForm = () => {
           <Form onSubmit={handleSubmit}>
             <div className="relative flex justify-center w-full mt-5 mb-3 md:justify-between">
               <input
-                className=" rounded-[8px] h-[39px] lg:h-[85px] bg-[#2A2A2A] flex-1 text-white placeholder:text-white  placeholder:text-[12px] placeholder:p-4"
+                className=" rounded-[8px] h-[39px] md:h-[85px] bg-[#2A2A2A] flex-1 text-white placeholder:text-white  placeholder:text-[12px] placeholder:p-4"
                 type="email"
                 name="email"
                 placeholder="EMAIL"

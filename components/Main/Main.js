@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import MainLayout from "../MainLayout";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Carousel from "./Carousel";
+import UpdatedCarousel from "./UpdatedCarosel";
 import { ImCheckmark } from "react-icons/im";
 import Popup from "../Modals/Popup";
 import Footer from "../Footer/Footer";
@@ -16,22 +17,23 @@ const Main = () => {
       {/* top section */}
       <main>
         <div className="bg-[#101010] h-[80vh] md:h-[calc(100vh-3rem)]   mx-auto  xl:max-w-[1200px]">
-          <div className="flex flex-col-reverse items-center w-full mt-20 md:flex-row-reverse md:justify-center ">
-            <div className="my-5">
+          {/* <div className="flex flex-col-reverse items-center w-full mt-20 md:flex-row-reverse md:justify-center "> */}
+          <div className="grid items-center justify-center grid-cols-1 mt-20 lg:grid-cols-2">
+            <div className="flex justify-center order-last my-5 ">
               <img
                 src="/lapTop.png"
                 alt="Gap Gambler"
-                className=" h-[300px] xl:h-[450px]"
+                className=" h-[300px] sm:h-[400px] md:h-[450px]"
               />
             </div>
-            <div className="relative lg:flex lg:flex-col lg:align-center lg:justify-center mb-7 ">
+            <div className="relative md:order-first lg:flex lg:flex-col lg:align-center lg:justify-center mb-7 ">
               <h1 className="font-bold text-center text-white ">
-                <span className="block md:pt-20 mb-2 text-[24px] xl:text-[50px] xl:pt-0">
+                <span className="block md:pt-20 mb-2 text-[24px] md:text-[50px] xl:pt-0">
                   {" "}
                   <span className="text-[24px] md:text-[45px]">The</span>{" "}
                   OFFICIAL
                 </span>
-                <span className="block text-[24px] xl:text-[40px] xl:w-[600px] mt-[18px] mb-[36px]">
+                <span className="block text-[24px] md:text-[40px] xl:w-[600px] mt-[18px] mb-[36px]">
                   Catalyst Sentiment Platform
                 </span>
               </h1>
@@ -68,29 +70,29 @@ const Main = () => {
         </div>
 
         {/* More main page content here... */}
-        <div className="flex justify-start pt-[53px]  md:pt-[108px] flex-col items-center md:h-[calc(100vh+3rem)] mb-[51px] md:mb-0 ">
+        <div className="flex justify-start pt-[53px]  md:pt-[108px] flex-col items-center lg:h-[calc(100vh+3rem)] mb-[51px] lg:mb-0 ">
           <div className="flex flex-col gap-[32px] md:gap-[79px] ">
-            <h1 className="font-bold text-white text-[24px] lg:text-[50px] ">
+            <h1 className="font-bold text-white text-[24px] md:text-[50px] ">
               Become a Beta Tester 🔥
             </h1>
             <div className="flex flex-col  w-full gap-[32px] md:gap-[79px]">
               <div className="flex flex-col gap-[39px] md:gap-[79px]">
-                <div className="flex items-center justify-start md:justify-start md:gap-[51px] ">
+                <div className="flex items-center gap-3 justify-start md:justify-start md:gap-[51px] ">
                   <ImCheckmark className="text-[#278AEC] w-[42px] h-[29px]" />{" "}
-                  <span className="text-base text-white lg:text-[40px]">
+                  <span className="text-base text-white md:text-[40px]">
                     Username Reservation{" "}
                   </span>
                 </div>
 
-                <div className="flex items-center justify-start md:justify-start md:gap-[51px]">
+                <div className="flex items-center justify-start gap-3 md:justify-start md:gap-[51px]">
                   <ImCheckmark className="text-[#278AEC] w-[42px] h-[29px]" />{" "}
-                  <span className="text-base text-white lg:text-[40px]">
+                  <span className="text-base text-white md:text-[40px]">
                     Weekly Cash Prizes{" "}
                   </span>
                 </div>
-                <div className="flex items-center justify-start md:justify-start md:gap-[51px] ">
+                <div className="flex items-center gap-3 justify-start md:justify-start md:gap-[51px] ">
                   <ImCheckmark className="text-[#278AEC] w-[42px] h-[29px]" />{" "}
-                  <span className="text-base text-white xl:text-[40px]">
+                  <span className="text-base text-white md:text-[40px]">
                     FREE Premium Membership{" "}
                   </span>
                 </div>
