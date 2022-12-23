@@ -1,0 +1,24 @@
+/* .carousel .control-dots .dot {
+  border-radius: 0% !important;
+  width: 20px !important;
+  height: 2px !important;
+} */
+
+.carousel .control-dots .dot {
+  border: 1px solid white !important;
+  transition: opacity 0.25s ease-in;
+  opacity: 0.9 !important;
+  filter: alpha(opacity=30);
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 90%);
+  background: transparent !important;
+  border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.carousel .control-dots .dot.selected {
+  background: #fff !important;
+}
