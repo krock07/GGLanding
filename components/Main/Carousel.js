@@ -61,7 +61,7 @@ export default () => (
       d3="  Prove it."
     />
     <CarouselItems
-      img="watchlist.png"
+      img="watchList.png"
       heading="     Watchlist Creation"
       description="               Create custom watchlist to track your favorite stocks ...all containing LIVE sentiment data"
     />
