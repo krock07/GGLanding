@@ -23,6 +23,12 @@
   background: #fff !important;
 }
 
-.carousel .control-dots {
+/* .carousel .control-dots {
   left: 231px;
+} */
+
+@media (min-width: 768px) {
+  .carousel .control-dots {
+    left: 231px;
+  }
 }
