@@ -5,9 +5,10 @@ const Carousel = ({ children }) => {
   const [counter, setCounter] = useState(1);
   const [pause, setPause] = useState(false);
   const content = children;
+  console.log(children);
 
   const handleNext = () => {
-    if (counter !== content.length) {
+    if (counter !== content?.length) {
       setCounter(counter + 1);
     } else {
       setCounter(1);
@@ -18,7 +19,7 @@ const Carousel = ({ children }) => {
     if (counter !== 1) {
       setCounter(counter - 1);
     } else {
-      setCounter(content.length);
+      setCounter(content?.length);
     }
   };
 
@@ -48,7 +49,7 @@ const Carousel = ({ children }) => {
         onMouseEnter={handleMouse}
         onMouseLeave={handleMouse}
       >
-        {content.map((item, index) => (
+        {content?.map((item, index) => (
           <div
             className={`${
               counter - 1 === index ? styles.show : styles.notShow
@@ -68,7 +69,7 @@ const Carousel = ({ children }) => {
       </div>
 
       <div className={`${styles.page}${styles.man}`}>
-        {content.map((item, index) => (
+        {content?.map((item, index) => (
           <span
             key={index}
             className={

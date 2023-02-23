@@ -22,3 +22,7 @@
 .carousel .control-dots .dot.selected {
   background: #fff !important;
 }
+
+.carousel .control-dots {
+  left: 231px;
+}
