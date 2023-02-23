@@ -7,11 +7,11 @@ const MainNav = () => {
   const [showModal, setShowModal] = useState(false);
   return (
     <div className="pt-3">
-      <nav className="bg-[#2A2A2A]   flex items-center justify-center h-[39px] w-[calc(100vw-1rem)] rounded-[5px] mx-auto lg:w-[1200px] md:h-[91px] lg:rounded-[50px] lg:mx-auto ">
+      <nav className="bg-[#2A2A2A]   flex items-center justify-center h-[39px] w-[calc(100vw-1rem)] rounded-[5px] mx-auto lg:w-[1200px] md:h-[70px] lg:rounded-[50px] lg:mx-auto ">
         <div className="container flex items-center pl-[2rem] pr-[1rem] justify-between md:items-center lg:justify-between lg:px-8 ">
           <div>
             <img
-              className="object-contain w-[150px] md:w-[250px] "
+              className="object-contain w-[150px] md:w-[250px]  "
               src="/GGHorizontal.svg"
               alt="Picture of the author"
             />

@@ -16,7 +16,7 @@ const Main = () => {
     <MainLayout>
       {/* top section */}
       <main>
-        <div className="bg-[#101010] h-[80vh] md:h-[calc(100vh-3rem)]   mx-auto  xl:max-w-[1200px]">
+        <div className="bg-[#101010] h-[80vh] md:h-[calc(100vh-13rem)]   mx-auto  xl:max-w-[1300px]">
           {/* <div className="flex flex-col-reverse items-center w-full mt-20 md:flex-row-reverse md:justify-center "> */}
           <div className="grid items-center justify-center grid-cols-1 mt-20 lg:grid-cols-2">
             <div className="flex justify-center order-last my-5 ">
@@ -26,7 +26,7 @@ const Main = () => {
                 className=" h-[300px] sm:h-[400px] md:h-[450px]"
               />
             </div>
-            <div className="relative md:order-first lg:flex lg:flex-col lg:align-center lg:justify-center mb-7 ">
+            <div className="relative md:order-first lg:flex lg:flex-col lg:items-center lg:justify-center mb-7 ">
               <h1 className="font-bold text-center text-white ">
                 <span className="block md:pt-20 mb-2 text-[24px] md:text-[50px] xl:pt-0">
                   {" "}
@@ -53,7 +53,7 @@ const Main = () => {
                   onClick={() => {
                     setShowModal(true);
                   }}
-                  className=" shadow-[inset_0_0_30px_rgba(0,0,0,0.5)] font-bold text-white text-[16px]  w-[115px] h-[33px] capitalize bg-[#278aec] rounded-[10px] md:w-[270px] md:h-[78px] md:text-[36px]"
+                  className=" shadow-[inset_0_0_30px_rgba(0,0,0,0.5)] font-bold text-white text-[16px]  w-[115px] h-[33px] capitalize bg-[#278aec] rounded-[10px] md:w-[200px] md:h-[68px] md:text-[26px]"
                 >
                   JOIN NOW
                 </button>
@@ -65,12 +65,12 @@ const Main = () => {
 
         {/* SECOND SECTION */}
 
-        <div className="bg-[#181818] md:h-[calc(100vh-3rem)]">
+        <div className="bg-[#181818] md:h-[calc(100vh-3rem)] md:flex md:items-center md:justify-center">
           <Carousel />
         </div>
 
         {/* More main page content here... */}
-        <div className="flex justify-start pt-[53px]  md:pt-[108px] flex-col items-center lg:h-[calc(100vh+3rem)] mb-[51px] lg:mb-0 ">
+        <div className="flex justify-start pt-[53px]  md:pt-[108px] flex-col items-center lg:h-[calc(100vh-5rem)] mb-[51px] lg:mb-0 ">
           <div className="flex flex-col gap-[32px] md:gap-[79px] ">
             <h1 className="font-bold text-white text-[24px] md:text-[50px] ">
               Become a Beta Tester 🔥
@@ -97,12 +97,12 @@ const Main = () => {
                   </span>
                 </div>
               </div>
-              <NewForm />
             </div>
           </div>
         </div>
+        <NewForm />
 
-        <div className="pt-10 bg-[#181818] text-white">
+        <div className="pt-2 bg-[#181818] text-white">
           <Footer />
         </div>
         {/* <div className="pt-10 bg-[#2A2A2A] sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
