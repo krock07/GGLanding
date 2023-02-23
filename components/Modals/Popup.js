@@ -6,7 +6,7 @@ import Form from "../Form/SignupForm";
 export default function Modal({ setOpenModal }) {
   return (
     <>
-      <div className="fixed inset-0 z-10 overflow-y-auto">
+      <div className="fixed inset-0 z-50 overflow-y-auto">
         <div
           className="fixed inset-0 w-full h-full bg-black opacity-70"
           onClick={() => setOpenModal(false)}
