@@ -121,16 +121,18 @@ const Signup = () => {
           /* and other goodies */
         }) => (
           <Form onSubmit={handleSubmit}>
-            <div class="min-h-screen bg-[#101010] py-6 flex flex-col justify-center sm:py-12">
+            <div class="min-h-screen bg-[#101010] py-6 flex flex-col justify-center items-center  sm:py-12">
               <div class="relative py-3 w-11/12 max-w-xl sm:mx-auto">
-                <div class="relative p-8 bg-[#2A2A2A] shadow-sm sm:rounded-xl">
+                <div class="relative p-8 bg-[#2A2A2A] shadow-sm sm:rounded-xl ">
                   <div className="flex flex-col items-center pb-8 text-white ">
                     <img
                       src="/ggIso.png"
                       className=" w-[63px] h-[37px] object-contain md:w-[78px] md:h-[56px]"
                     />
-                    <h1 className="text-3xl font-extrabold">Join the list</h1>
-                    <p className="text-xl">
+                    <h1 className="text-2xl font-extrabold md:text-3xl">
+                      Join the list
+                    </h1>
+                    <p className="text-md md:text-xl">
                       Get notified immediately on BETA Launch!
                     </p>
                   </div>

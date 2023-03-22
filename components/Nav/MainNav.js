@@ -21,7 +21,7 @@ const MainNav = () => {
           </div>
 
           <div>
-            <Link href="/signup.js">
+            <Link href="/signup">
               <Image
                 // onClick={() => {
                 //   setShowModal(true);

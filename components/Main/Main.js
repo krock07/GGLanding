@@ -100,7 +100,7 @@ const Main = () => {
         </div>
         <NewForm />
 
-        <div className="pt-2 bg-[#181818] text-white">
+        <div className="py-4 bg-[#181818] text-white my-12">
           <Footer />
         </div>
         {/* <div className="pt-10 bg-[#2A2A2A] sm:pt-16 lg:pt-8 lg:pb-14 lg:overflow-hidden">
