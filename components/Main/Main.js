@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import Link from "next/link";
 import MainLayout from "../MainLayout";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Carousel from "./Carousel";
@@ -16,7 +17,7 @@ const Main = () => {
     <MainLayout>
       {/* top section */}
       <main>
-        <div className="bg-[#101010] h-[80vh] md:h-[calc(100vh-13rem)]   mx-auto  xl:max-w-[1300px]">
+        <div className="bg-[#101010] h-[80vh] md:h-[calc(100vh-13rem)]  2xl:h-[calc(100vh-27rem)] mx-auto  xl:max-w-[1300px]">
           {/* <div className="flex flex-col-reverse items-center w-full mt-20 md:flex-row-reverse md:justify-center "> */}
           <div className="grid items-center justify-center grid-cols-1 mt-20 lg:grid-cols-2">
             <div className="flex justify-center order-last my-5 ">
@@ -26,14 +27,14 @@ const Main = () => {
                 className=" h-[300px] sm:h-[400px] md:h-[450px]"
               />
             </div>
-            <div className="relative md:order-first lg:flex lg:flex-col lg:items-center lg:justify-center mb-7 ">
+            <div className="relative -top-12 md:order-first lg:flex lg:flex-col lg:items-center lg:justify-center mb-7 ">
               <h1 className="font-bold text-center text-white ">
-                <span className="block md:pt-20 mb-2 text-[24px] md:text-[50px] xl:pt-0">
+                <span className="block  font-black lg:font-extrabold md:pt-20 mb-2 text-[24px] md:text-[50px] xl:pt-0">
                   {" "}
                   <span className="text-[24px] md:text-[45px]">The</span>{" "}
                   OFFICIAL
                 </span>
-                <span className="block text-[24px] md:text-[40px] xl:w-[600px] mt-[18px] mb-[36px]">
+                <span className="block lg:font-extrabold font-black  text-[24px] md:text-[40px] xl:w-[600px] mt-[18px] mb-[36px]">
                   Catalyst Sentiment Platform
                 </span>
               </h1>
@@ -48,17 +49,14 @@ const Main = () => {
               alt=""
             /> */}
 
-              <div className="flex justify-center mt-5 mb-7 ">
-                <button
-                  onClick={() => {
-                    setShowModal(true);
-                  }}
-                  className=" shadow-[inset_0_0_30px_rgba(0,0,0,0.5)] font-bold text-white text-[16px]  w-[115px] h-[33px] capitalize bg-[#278aec] rounded-[10px] md:w-[200px] md:h-[68px] md:text-[26px]"
-                >
-                  JOIN NOW
-                </button>
+              <div className="flex justify-center mt-5 -mb-[40px] lg:mb-7 ">
+                <Link href="/signup">
+                  <button className=" shadow-[inset_0_0_30px_rgba(0,0,0,0.5)] font-bold text-white text-[16px]  w-[115px] h-[33px] capitalize bg-[#278aec] rounded-[10px] md:w-[200px] md:h-[68px] md:text-[26px]">
+                    JOIN NOW
+                  </button>
+                </Link>
               </div>
-              {showModal && <Popup setOpenModal={setShowModal} />}
+              {/* {showModal && <Popup setOpenModal={setShowModal} />} */}
             </div>
           </div>
         </div>
@@ -70,7 +68,7 @@ const Main = () => {
         </div>
 
         {/* More main page content here... */}
-        <div className="flex justify-start pt-[53px]  md:pt-[108px] flex-col items-center lg:h-[calc(100vh-5rem)] mb-[51px] lg:mb-0 ">
+        <div className="flex justify-start pt-[33px]  md:pt-[108px] flex-col items-center lg:h-[calc(100vh-5rem)] 2xl:h-[calc(100vh-20rem)] mb-[51px] lg:mb-0 ">
           <div className="flex flex-col gap-[32px] md:gap-[79px] ">
             <h1 className="font-bold text-white text-[24px] md:text-[50px] ">
               Become a Beta Tester 🔥

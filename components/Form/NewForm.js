@@ -1,9 +1,45 @@
 import React from "react";
-import { Formik, Form } from "formik";
+import { Formik, Form, Field } from "formik";
 import { useToast } from "@chakra-ui/react";
+import { alpha, styled } from "@mui/material/styles";
+import Input from "@mui/material/Input";
+import InputLabel from "@mui/material/InputLabel";
+import InputBase from "@mui/material/InputBase";
+import { TextField } from "@mui/material";
+import MuiTextField from "@mui/material/TextField";
+import { ChakraProvider } from "@chakra-ui/react";
 
 const NewForm = () => {
   const toast = useToast();
+  const BootstrapInput = styled(InputBase)(({ theme }) => ({
+    "label + &": {
+      marginTop: theme.spacing(3),
+    },
+    "& .MuiInputBase-input": {
+      "&::placeholder": {
+        color: "white",
+      },
+      borderRadius: 8,
+      position: "relative",
+      backgroundColor: theme.palette.mode === "light" ? "#2a2a2a" : "#2b2b2b",
+      // border: "1px solid #ced4da",
+      fontSize: 16,
+      color: "white",
+      width: "100%",
+      // height: "35px",
+      padding: "10px 12px",
+      transition: theme.transitions.create([
+        "border-color",
+        "background-color",
+        "box-shadow",
+      ]),
+      // Use the system font instead of the default Roboto font.
+      "&:focus": {
+        boxShadow: `${alpha(theme.palette.primary.main, 0.25)} 0 0 0 0.2rem`,
+        borderColor: theme.palette.primary.main,
+      },
+    },
+  }));
   return (
     <>
       <Formik
@@ -62,7 +98,7 @@ const NewForm = () => {
         }) => (
           <Form onSubmit={handleSubmit}>
             <div className="relative mx-auto flex justify-center w-[90%] mt-5 mb-3 md:justify-between  md:w-[700px] md:-top-[60px] ">
-              <input
+              {/* <input
                 className="  rounded-[8px] h-[39px] md:h-[55px]  bg-[#2A2A2A] flex-1 text-white placeholder:text-white  placeholder:text-[12px] placeholder:p-4"
                 type="email"
                 name="email"
@@ -70,15 +106,37 @@ const NewForm = () => {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.email}
+              /> */}
+              <Field
+                component={BootstrapInput}
+                name="email"
+                id="email"
+                type="email"
+                label="Email"
+                helperText={!values.email.length ? "email is required" : ""}
+                placeholder="Email"
+                fullWidth
+                onChange={handleChange}
+                onBlur={handleBlur}
+                value={values.email}
               />
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="shadow-[inset_0_0_30px_rgba(0,0,0,0.5)] font-bold absolute right-0  text-white text-[10px] w-[74px] h-[39px] md:h-[55px] md:w-[174px]    capitalize bg-[#278aec] rounded-[8px]  xl:text-sm"
-              >
-                JOIN BETA
-              </button>
+              {/* <TextField
+                variant="outlined"
+                // error={values.email.length === 0}
+                // helperText={!values.email.length ? "email is required" : ""}
+                value={values.email}
+                label="Enter your email"
+                onChange={handleChange}
+              /> */}
+              <ChakraProvider>
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="shadow-[inset_0_0_30px_rgba(0,0,0,0.5)] font-bold absolute right-0  text-white text-[10px] w-[74px] h-[43px]  md:w-[174px]    capitalize bg-[#278aec] rounded-[8px]  xl:text-[20px]"
+                >
+                  JOIN BETA
+                </button>
+              </ChakraProvider>
             </div>
             <div>
               <p className="text-red-600">

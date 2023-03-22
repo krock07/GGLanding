@@ -46,7 +46,7 @@ const Layout = ({
         {" "}
         <Nav />{" "}
       </header>
-      <main className="relative h-full min-h-full">{children}</main>
+      <main className="relative h-full min-h-full ">{children}</main>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Popup from "../Modals/Popup";
 import NavBtn from "../../public/navBtn.png";
 import styles from "./MainNav.module.css";
+import Link from "next/link";
 const MainNav = () => {
   const [showModal, setShowModal] = useState(false);
   return (
@@ -10,32 +11,39 @@ const MainNav = () => {
       <nav className="bg-[#2A2A2A]   flex items-center justify-center h-[39px] w-[calc(100vw-1rem)] rounded-[5px] mx-auto lg:w-[1200px] md:h-[70px] lg:rounded-[50px] lg:mx-auto ">
         <div className="container flex items-center pl-[2rem] pr-[1rem] justify-between md:items-center lg:justify-between lg:px-8 ">
           <div>
-            <img
-              className="object-contain w-[150px] md:w-[250px]  "
-              src="/GGHorizontal.svg"
-              alt="Picture of the author"
-            />
+            <Link href="/">
+              <img
+                className="object-contain w-[150px] md:w-[250px]  "
+                src="/GGHorizontal.svg"
+                alt="Picture of the author"
+              />
+            </Link>
           </div>
 
           <div>
-            <Image
-              onClick={() => {
-                setShowModal(true);
-              }}
-              src={NavBtn}
-              width={98}
-              height={27}
-              className={styles.navBtn}
-            />
-            <Image
-              onClick={() => {
-                setShowModal(true);
-              }}
-              src={NavBtn}
-              width={188}
-              height={54}
-              className={styles.heroBtn}
-            />
+            <Link href="/signup.js">
+              <Image
+                // onClick={() => {
+                //   setShowModal(true);
+                // }}
+                src={NavBtn}
+                width={98}
+                height={27}
+                className={styles.navBtn}
+              />
+            </Link>
+            <Link href="/signup">
+              <Image
+                // onClick={() => {
+                //   setShowModal(true);
+                // }}
+                src={NavBtn}
+                width={188}
+                height={54}
+                className={styles.heroBtn}
+              />
+            </Link>
+
             {/* <button
               onClick={() => {
                 setShowModal(true);

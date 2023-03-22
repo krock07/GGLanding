@@ -27,8 +27,26 @@
   left: 231px;
 } */
 
+/* .carousel .control-dots {
+  left: 231px;
+} */
+
 @media (min-width: 768px) {
   .carousel .control-dots {
-    left: 231px;
+    left: 209px;
+    bottom: 127px;
+  }
+}
+@media (min-width: 960px) {
+  .carousel .control-dots {
+    left: 209px;
+    bottom: 127px !important;
+  }
+}
+
+@media (min-width: 1441px) {
+  .carousel .control-dots {
+    left: 317px;
+    bottom: 140px !important;
   }
 }

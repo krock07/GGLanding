@@ -62,31 +62,33 @@ export default () => (
     />
     <CarouselItems
       img="watchList.png"
-      heading="     Watchlist Creation"
-      description="               Create custom watchlist to track your favorite stocks ...all containing LIVE sentiment data"
+      heading="Watchlist Creation"
+      description="Create custom watchlist to track your favorite stocks "
+      d3="  ...all containing LIVE sentiment data."
     />
     <CarouselItems
       img="exclusiveSentiment.png"
-      heading="        Exclusive Sentiment Data"
-      description="                Gain insight into Gap Gambler’s sentiment database"
-      d3="and interact with like-minded traders from around the world"
+      heading="Exclusive Sentiment Data"
+      description="Gain insight into Gap Gambler’s sentiment database"
+      d3="and interact with like-minded traders from "
+      d4="around the world"
     />
     <CarouselItems
       img="inDepth.png"
-      heading="         In-Depth Tools and Information"
-      description="                 Access company news, calendars, charts, and fundamentals. All in
-              one place"
+      heading="In-Depth Tools and Information"
+      description2="Access company news, calendars, charts, and fundamentals"
+      d5="All in one place"
     />
     <CarouselItems
       img="performance.png"
-      heading="           Performance Tools"
-      description="              Track your gambles with in-depth statistics showing  your performance within each market sector and  individual companies"
+      heading="Performance Tools"
+      description2="Track your gambles with in-depth statistics showing  your performance within each market sector and  individual companies"
     />
     <CarouselItems
       img="topGambler.png"
-      heading="                Become a Top Gambler"
-      description="              The Compete to earn your spot at the top of the leaderboard. 
-      And don’t worry... Top Gamblers will be rewarded "
+      heading="Become a Top Gambler"
+      description2="The Compete to earn your spot at the top of the leaderboard."
+      d5="And don’t worry... Top Gamblers will be rewarded "
     />
 
     {/* <div className="py-10 bg-[#181818] w-full  mx-auto">
