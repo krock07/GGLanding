@@ -71,7 +71,7 @@ const SignupForm = () => {
                 <p className="font-bold text-[30px] md:text-[40px] text-white">
                   Join the List
                 </p>
-                <p className="text-white px-0 text-[20px] md:text-[24px]">
+                <p className="text-white px-0 text-[20px] md:text-[23px]">
                   Get notified immediately on BETA Launch!
                 </p>
                 {/* <p className="text-red-600">
